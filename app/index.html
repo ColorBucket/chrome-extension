@@ -1,0 +1,57 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1,minimum-scale=1">
+
+    <title>ColorBucket</title>
+    
+    <link href="assets/smallicon.png" rel="shortcut icon" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./bundle.css" />
+	</head>
+	<body>
+    <div id="app">
+      <!-- Fixed Header -->
+      <header>
+          <a id="logout_action">logout</a>
+      </header>
+
+      <!-- Login Form -->
+      <div id="login">
+        <div class="login-form">
+          <div>
+            <input type="text" id="email" name="email" placeholder="email" />
+          </div>
+          <div>
+            <input type="password" id="password" name="password" placeholder="password" />
+          </div>
+          <div>
+            <input type="button" id="login_action" value="login" />
+          </div>
+        </div>
+        <div class="login-options">
+            Don't have an account? <a href="https://colorbucket.github.io" target="_blank">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- Color Form -->
+      <div id="add-color">
+        <div>
+          <input type="text" class="full-width center-text" id="color-name" name="color-name" placeholder="name the color" value="">
+        </div>
+        <div>
+          <input type="text" class="full-width center-text ma-cl-b" id="color-hex" name="color-hex" placeholder="type your hex #000000" value="">
+          <div><span>or</span></div>
+          <input type="color" class="full-width center-text" name="hexPicker" id="hexPicker" value="">
+        </div>
+        <div>
+          <input type="button" id="save_action" class="button" value="save color">
+        </div>
+      </div>
+
+      <div id="message-alert"></div>
+    </div>
+
+    <script src="./bundle.js"></script>
+	</body>
+</html>

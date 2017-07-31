@@ -1,0 +1,22 @@
+#add-color {
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+
+	> div {
+		display: block;
+		width: 100%;
+		text-align: center;
+
+		> input {
+			text-align: center;
+		}
+
+		input[type="color"] {
+			width: 100%;
+	    margin: 5px 0 10px 0;
+	    height: 40px;
+	    border: 0;
+		}
+	}
+}
