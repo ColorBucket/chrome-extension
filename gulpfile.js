@@ -42,7 +42,7 @@ gulp.task('bundle-js', function() {
 //
 
 gulp.task('copy-statics', function () {
-  gulp.src(['./app/index.html'])
+  gulp.src(['./app/index.html', './app/popup.html', './app/popup.js'])
     .pipe(gulp.dest('./build/'));
 
   return gulp.src(['./app/assets/*.*'])

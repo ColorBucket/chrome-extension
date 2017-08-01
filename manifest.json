@@ -7,9 +7,10 @@
 
   "browser_action": {
    "default_icon": "build/assets/icon.png",
-   "default_popup": "build/index.html"
+   "default_popup": "build/popup.html"
   },
   "permissions": [
-   "activeTab"
+   "activeTab",
+   "tabs"
    ]
 }
