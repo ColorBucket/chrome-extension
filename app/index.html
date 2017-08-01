@@ -14,6 +14,15 @@
       <!-- Fixed Header -->
       <header>
           <a id="logout_action">logout</a>
+          <div id="logout_confirm_holder" style="display: none;">
+            <p>Do you really want to logout?</p>
+            <div>
+              <input type="button" id="logout_confirm" value="logout" />
+            </div>
+            <div>
+              <input type="button" class="button clear sm" id="logout_deny" value="stay logged" />
+            </div>
+          </div>
       </header>
 
       <!-- Login Form -->

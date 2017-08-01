@@ -6,5 +6,38 @@ header {
 	> a {
 		color: #333;
 		cursor: pointer;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+	#logout_confirm_holder {
+		background: #fff;
+    width: 100%;
+    min-height: 150px;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    text-align: left;
+
+    p {
+    	padding: 0 10px;
+	    font-size: 1.3em;
+	    text-align: center;
+    }
+
+    .button,
+    input[type="button"] {
+    	margin: 0 auto 5px auto;
+
+    	&.clear {
+    		font-size: .5rem;
+		    padding: 8px 22px 7px 22px;
+		    background: #fff;
+		    color: #333;
+		    border: 1px solid #999;
+    	}
+    }
 	}
 }

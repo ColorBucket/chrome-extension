@@ -31,6 +31,7 @@ function DoLogin() {
 }
 
 function DoLogout() {
+	LogoutConfirm(false);
 	localStorage.clear();
 	appState.logged = false;
 	RefreshState();
@@ -75,6 +76,11 @@ function HexInputChange() {
 		document.getElementById('hexPicker').value = hexInput.value;
 }
 
+function LogoutConfirm(show) {
+	document.getElementById("logout_confirm_holder").style["display"] = !show ? "none" : "inherit";
+	document.getElementById("add-color").style["display"] = show ? "none" : "inherit";
+}
+
 // Bind Events
 document.addEventListener('DOMContentLoaded', function() {
 	appState.logged = localStorage.token != undefined;
@@ -84,7 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
   loginButton.addEventListener('click', DoLogin);
 
   var logoutButton = document.getElementById('logout_action');
-  logoutButton.addEventListener('click', DoLogout);
+  logoutButton.addEventListener('click', function() { LogoutConfirm(true); });
+  var logoutDeny = document.getElementById('logout_deny');
+  logoutDeny.addEventListener('click', function() { LogoutConfirm(false); });
+  var logoutConfirm = document.getElementById('logout_confirm');
+  logoutConfirm.addEventListener('click', DoLogout);
 
 	var saveButton = document.getElementById('save_action');
   saveButton.addEventListener('click', AddColor);
