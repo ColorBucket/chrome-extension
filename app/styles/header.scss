@@ -3,11 +3,21 @@ header {
 	padding: 0 5px 5px 5px;
 	text-align: right;
 
-	> a {
-		color: #333;
-		cursor: pointer;
-		display: inline-block;
-		vertical-align: top;
+	> p {
+		overflow: hidden;
+		
+		a {
+			float: left;
+			color: #333;
+			cursor: pointer;
+			display: inline-block;
+			vertical-align: top;
+			text-decoration: none;
+
+			&#logout_action {
+				float: right;
+			}
+		}
 	}
 
 

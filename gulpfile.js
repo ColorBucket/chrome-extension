@@ -61,6 +61,6 @@ gulp.task('watch-dev', function () {
 
 ///////
 
-gulp.task('default', ['clean-build', 'bundle-js', 'bundle-sass', 'copy-statics']);
+gulp.task('default', [/*'clean-build',*/ 'bundle-js', 'bundle-sass', 'copy-statics']);
 
 gulp.task('dev', ['watch-dev']);

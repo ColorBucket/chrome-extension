@@ -1,5 +1,5 @@
 'use strict';
-var apiUrl = 'http://localhost:3010/api';
+var apiUrl = 'http://api.colorbucket.co/api';
 
 var HttpService = function() {
 	
