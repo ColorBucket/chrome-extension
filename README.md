@@ -16,7 +16,7 @@ Chrome extension to make your life easier when saving your favorite colors
   * cd to project folder
   * run `[sudo] npm install` (first time users)
   * run `npm run build`
-  * "install" local chrome extention. tip: https://stackoverflow.com/a/24577660
+  * install local chrome extention. tip: https://stackoverflow.com/a/24577660
   * have fun
 
 > <small>*Made with ❤️ by <a href="https://github.com/Agezao">Gabriel "Age"</a>*</small>
