@@ -3,7 +3,7 @@
 
   "name": "ColorBucket",
   "description": "save the colors that you ♥",
-  "version": "1.0",
+  "version": "1.1",
 
   "browser_action": {
    "default_icon": "build/assets/icon.png",
