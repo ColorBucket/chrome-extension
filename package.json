@@ -1,5 +1,5 @@
 {
-  "name": "colorbucket-chrome-extention",
+  "name": "colorbucket-chrome-extension",
   "version": "1.0.0",
   "description": "save the colors that you ♥",
   "main": "index.js",
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Colorbucket/chrome-extention.git"
+    "url": "https://github.com/Colorbucket/chrome-extension.git"
   },
   "bugs": {
-    "url": "https://github.com/Colorbucket/chrome-extention.git/issues"
+    "url": "https://github.com/Colorbucket/chrome-extension.git/issues"
   },
   "license": "MIT",
   "scripts": {
